@@ -12,7 +12,7 @@ class Figure{
 private:
     std::string name;
 public:
-    explicit Figure(std::string name);
+    explicit Figure(std::string name): name(name){};
     virtual double square() = 0;
     virtual double perimeter() = 0;
     virtual std::string getType() = 0;
